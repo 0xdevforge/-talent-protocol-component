@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes marqueeUp {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes marqueeDown {
+  0% {
+    transform: translateY(-50%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.marquee-up,
+.marquee-down {
+  position: relative;
+}
+
+.marquee-up .content,
+.marquee-down .content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.marquee-up .content {
+  animation-name: marqueeUp;
+}
+
+.marquee-down .content {
+  animation-name: marqueeDown;
+}
+
+.marquee-up:hover .content,
+.marquee-down:hover .content {
+  animation-play-state: paused;
+}
+
+
+
+.custom-tooltip {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding:  5px;
+  border-radius:  4px;
+  z-index:  1000;
+}
