@@ -41,7 +41,7 @@ export default function Home() {
           </nav>
           <div className="space-y-6 pt-24">
             <h1 className=" text-[40px] px-12 text-center  lg:text-[3.5rem] leading-[1.2]">
-              You"ll never <span className="italic font-thin">build</span> alone.
+              Yo&quot;ll never <span className="italic font-thin">build</span> alone.
             </h1>
             <p className="text-[#536471] px-4 lg:text-[1.25rem] leading-[1.5]">
               Where builders commit to goals, share their progress and find the support they need to succeed.
@@ -122,7 +122,7 @@ export default function Home() {
               </nav>
               <div className="space-y-6">
                 <h1 className="text-[3.5rem] leading-[1.2]">
-                  You"ll never <span className="italic font-light">build</span> alone.
+                  You&quot;ll never <span className="italic font-light">build</span> alone.
                 </h1>
                 <p className="text-[1.25rem] leading-[1.5]">
                   Where builders commit to goals, share their progress and find the support they need to succeed.
